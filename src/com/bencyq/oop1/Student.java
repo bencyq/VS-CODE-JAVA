@@ -1,14 +1,36 @@
 package src.com.bencyq.oop1;
+
 public class Student {
-    //属性
     String name;
     int age;
 
-    //方法
-    public void study(){
-        System.out.println(name+"在学习");
+    public String getName() {
+        return name;
     }
-        public Student(String name){
-        this.name=name;
+
+    public void setName(String name) {
+        this.name = name;
     }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public Student(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    public Student(String name) {
+        this.name = name;
+    }
+
+    public void study() {
+        System.out.println(name + "在学习");
+    }
+
 }
